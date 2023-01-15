@@ -51,7 +51,9 @@
     <main>
       <section class="hero">
         <h1 class="heading-hero">Effective Solutions for Your Business</h1>
-        <button type="button" class="buttons" data-modal-open>Order Service</button>
+        <button type="button" class="buttons" data-modal-open>
+          Order Service
+        </button>
       </section>
       <section class="features section">
         <div class="container">
@@ -406,23 +408,27 @@
             </li>
           </ul>
         </div>
-      <div>
-        <form action="" class="email-block">
-         <div class="email-input">
-            <label for="mail" class="email-label">
-              Subscribe
-            </label>
-            <input type="email" name="email" placeholder="E-mail" id="mail" class="email-button">
-          </div>
-          <button type="submit" class="submit-button buttons">
-            <span class="text-button">Subscribe</span>
-            <svg width="24" height="20">
-              <use href="./images/icons.svg#arrow"></use>
-            </svg>
-          </button>
-        </form>
+        <div>
+          <form action="" class="email-block">
+            <div class="email-input">
+              <label for="mail" class="email-label"> Subscribe </label>
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                id="mail"
+                class="email-button"
+              />
+            </div>
+            <button type="submit" class="submit-button buttons">
+              <span class="text-button">Subscribe</span>
+              <svg width="24" height="20">
+                <use href="./images/icons.svg#arrow"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
-    </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -431,13 +437,15 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-       <form class="form-modal">
-          <p class="form-paragraph">Leave your contacts and we will call you back</p>
+        <form class="form-modal">
+          <p class="form-paragraph">
+            Leave your contacts and we will call you back
+          </p>
           <label class="modal-label">
             <span class="modal-label-text">Name</span>
             <div class="position-block">
-              <input type="text" name="user-name" class="modal-input">
-              <svg width="15" height="15" class="user-name">
+              <input type="text" name="user-name" class="modal-input" />
+              <svg width="12" height="12" class="user-name icon-input">
                 <use href="./images/icons.svg#username"></use>
               </svg>
             </div>
@@ -445,8 +453,8 @@
           <label class="modal-label">
             <span class="modal-label-text">Phone</span>
             <div class="position-block">
-              <input type="tel" name="phone" class="modal-input">
-              <svg width="15" height="15" class="phone">
+              <input type="tel" name="phone" class="modal-input" />
+              <svg width="13" height="13" class="phone icon-input">
                 <use href="./images/icons.svg#phone"></use>
               </svg>
             </div>
@@ -454,15 +462,33 @@
           <label class="modal-label">
             <span class="modal-label-text">Email</span>
             <div class="position-block">
-              <input type="email" name="email" class="modal-input">
-              <svg width="15" height="15" class="email">
+              <input type="email" name="email" class="modal-input" />
+              <svg width="15" height="12" class="email icon-input">
                 <use href="./images/icons.svg#email"></use>
               </svg>
             </div>
           </label>
-          <textarea name="" id="" cols="30" rows="10">
-          </textarea>
-       </form>
+          <label class="modal-label">
+            <span class="modal-label-text">Comment</span>
+            <textarea
+              name="comment"
+              cols=""
+              rows=""
+              class="comment"
+              placeholder="Text input"
+            >
+            </textarea>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="checkbox" class="checkbox-input" />
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text"
+              >I accept the terms and conditions of the
+              <a href="" class="checkbox-link"> Privacy Policy</a></span
+            >
+          </label>
+          <button type="submit" class="modal-submit buttons">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
