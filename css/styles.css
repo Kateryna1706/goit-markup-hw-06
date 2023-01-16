@@ -518,6 +518,7 @@ footer .logo {
 .submit-button {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   width: 165px;
   height: 40px;
@@ -540,10 +541,6 @@ footer .logo {
 .submit-button:hover,
 .submit-button:focus {
   background-color: var(--secondary-accent-color);
-}
-
-.text-button {
-  margin-right: 16px;
 }
 
 /*portfolio.html*/
@@ -716,10 +713,13 @@ footer .logo {
   transform: translate(-50%, -50%) scale(1);
 
   width: 408px;
+  padding: 72px 24px 24px;
+  border-radius: 4px;
+
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -728,22 +728,35 @@ footer .logo {
 }
 
 .close-modal {
-  width: 24px;
-  height: 24px;
-  padding: 0;
-  border: 0;
-  border-radius: 50%;
   position: absolute;
   right: 24px;
   top: 24px;
-  display: block;
+  display: flex;
+
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  
+  background-color: #E7E9FC;
+  outline: none;
 }
 
-.form-modal {
-  padding-top: 72px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 24px;
+.close-modal:focus,
+.close-modal:hover {
+  background-color: var(--secondary-accent-color);
+  
+}
+
+.modal-icon {
+  fill: #000;
+}
+
+.close-modal:focus .modal-icon,
+.close-modal:hover .modal-icon {
+  fill: var(--primary-white-color);
 }
 
 .form-paragraph {
@@ -788,14 +801,14 @@ footer .logo {
   background-repeat: no-repeat;
   background-position: center left 19px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+              background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .modal-input:hover,
 .modal-input:focus {
   border-color: var(--accent-color);
-  outline: none;
+  
 }
 
 .modal-input.username {
