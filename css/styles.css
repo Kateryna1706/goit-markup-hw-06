@@ -784,28 +784,64 @@ footer .logo {
   padding-left: 38px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  background-repeat: no-repeat;
+  background-position: center left 19px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-label:hover .modal-input,
-.modal-label:focus .modal-input {
+.modal-input:hover,
+.modal-input:focus {
   border-color: var(--accent-color);
   outline: none;
 }
 
-.icon-input {
+.modal-input.username {
+  background-image: url("../images/username.svg");
+  background-size: 12px; 
+}
+
+.modal-input.username:hover,
+.modal-input.username:focus {
+  background-image: url("../images/username-focus.svg");
+}
+
+.modal-input.phone {
+  background-image: url("../images/phone.svg");
+  background-size: 13px;
+}
+
+.modal-input.phone:hover,
+.modal-input.phone:focus {
+  background-image: url("../images/phone-focus.svg");
+}
+
+.modal-input.email {
+  background-image: url("../images/email.svg");
+  background-size: 15px 12px;
+}
+
+.modal-input.email:hover,
+.modal-input.email:focus {
+  background-image: url("../images/email-focus.svg");
+}
+
+
+/* .icon-input {
   position: absolute;
   top: 50%;
   left: 19px;
   fill: #2e2f42;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.modal-label:hover .icon-input,
+/* .modal-label:hover .icon-input,
 .modal-label:focus .icon-input {
   fill: var(--accent-color);
-}
+} */
 
 .comment {
   width: 360px;
