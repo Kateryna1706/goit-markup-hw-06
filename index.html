@@ -422,7 +422,7 @@
             </div>
             <button type="submit" class="submit-button buttons">
               Subscribe
-              <svg width="24" height="20">
+              <svg width="24" height="20" class="arrow-icon">
                 <use href="./images/icons.svg#arrow"></use>
               </svg>
             </button>
@@ -443,34 +443,20 @@
           </p>
           <label class="modal-label">
             <span class="modal-label-text">Name</span>
-            <div class="position-block">
-              <input
-                type="text"
-                name="user-name"
-                class="modal-input username"
-              />
-              <!-- <svg width="12" height="12" class="user-name icon-input">
-                <use href="./images/icons.svg#username"></use>
-              </svg> -->
-            </div>
+            <input
+              type="text"
+              name="user-name"
+              class="modal-input username"
+              required
+            />
           </label>
           <label class="modal-label">
             <span class="modal-label-text">Phone</span>
-            <div class="position-block">
-              <input type="tel" name="phone" class="modal-input phone" />
-              <!-- <svg width="13" height="13" class="phone icon-input">
-                <use href="./images/icons.svg#phone"></use>
-              </svg> -->
-            </div>
+            <input type="tel" name="phone" class="modal-input phone" required />
           </label>
           <label class="modal-label">
             <span class="modal-label-text">Email</span>
-            <div class="position-block">
-              <input type="email" name="email" class="modal-input email" />
-              <!-- <svg width="15" height="12" class="email icon-input">
-                <use href="./images/icons.svg#email"></use>
-              </svg> -->
-            </div>
+            <input type="email" name="email" class="modal-input email" />
           </label>
           <label class="modal-label">
             <span class="modal-label-text">Comment</span>
