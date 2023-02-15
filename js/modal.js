@@ -17,6 +17,18 @@
 
 
 
+function formatMessage(message, maxLength) {
+  let result;
+  // Change code below this line
+if (message.length <= maxLength) {
+  result = message;
+} else {
+  message = message.slise(0, maxLength); 
+  message = message + "...";
+}
+  /// Change code above this line
+  return result;
+}
 
 
 
